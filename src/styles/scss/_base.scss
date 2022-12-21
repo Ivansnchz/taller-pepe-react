@@ -1,0 +1,29 @@
+/* color paleta
+background-color: #f05a1a;
+    color: #f8f8f8; */
+
+// colores
+$blancoRoto:#e1e1e1;
+$grisOscurillo: rgb(61, 59, 59);
+$negro: rgb(10, 7, 12);
+$morado:  rgb(131, 71, 172);
+
+
+// devices
+
+$tablet: 762px;
+
+
+// font sizes
+$pequena:1.2rem;
+
+h1,
+h2,
+p,
+span,
+footer {
+    color: $grisOscurillo ;
+}
+
+
+
