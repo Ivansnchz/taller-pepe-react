@@ -1,6 +1,6 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 
-import './styles/App.css';
+import './App.scss';
 
 function App() {
   return (
@@ -36,13 +36,22 @@ function App() {
 
             <div class="collapse" id="navbarToggleExternalContent">
               <div class="bg-light shadow-3 p-4">
-                <button class="btn btn-link btn-block border-bottom m-0"><a href="./"><span
+                <button class="btn btn-link btn-block border-bottom m-0">
+                 {/*eslint-disable-next-line*/ }
+
+                  <a href="./"><span
                   class="orange">Inicio</span></a></button>
                 <button class="btn btn-link btn-block border-bottom m-0"><a
                   href="./servicios"><span>Servicios24</span></a></button>
-                <button class="btn btn-link btn-block m-0"><a href="./recomendamos" /><span
+                <button class="btn btn-link btn-block m-0">
+                 {/*eslint-disable-next-line*/ }
+                  <a href="./recomendamos" /><span
                   class="ini">Recomendamos</span></button>
-                <button class="btn btn-link btn-block m-0"><a href="./contacto"/><span
+                <button class="btn btn-link btn-block m-0">
+                 {/*eslint-disable-next-line*/ }
+                
+                 {/*eslint-disable-next-line*/ }
+                  <a href="./contacto"/><span
                   class="ini">Contacto</span></button>
               </div>
             </div>

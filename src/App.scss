@@ -1,6 +1,6 @@
-@import '_reset';
-@import '_base';
-@import '_mixins';
+@import './styles/_reset';
+@import './styles/_base';
+@import './styles/_mixins';
 
 div#pageContainer {
     display: flex;
