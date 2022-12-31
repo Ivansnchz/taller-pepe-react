@@ -1,5 +1,12 @@
 import logo from './images/logo-1-300x138.png';
 
+import {
+  MDBCarousel,
+  MDBCarouselItem,
+} from 'mdb-react-ui-kit';
+
+import 'mdb-react-ui-kit/dist/css/mdb.min.css';
+import "@fortawesome/fontawesome-free/css/all.min.css";
 import './App.scss';
 
 function App() {
@@ -8,7 +15,6 @@ function App() {
       <header class="logoAndMenuItemsContainer">
         <div class="menu">
           <div class="logo">
-            {/* <li class="nobullets"><a href="./"><img class="logo-img" src="./images/logo-1-300x138.png" */}
             <li class="nobullets"><a href="./"><img class="logo-img" src={logo}
               alt="logo" /></a></li>
           </div>
@@ -19,10 +25,6 @@ function App() {
               <li><a href="./recomendamos"><span class="ini">Recomendamos</span></a></li>
               <li><a href="./"><span>Contacto</span></a></li>
 
-              {/* <form>
-							<input id="hello" class="hello" alt="name" type="text"></input>
-							<button class="buttonHello" onclick="sayHello()">Enviar</button>
-						</form>  */}
             </ul>
           </div>
 
@@ -72,56 +74,28 @@ function App() {
 
       </aside>
 
-      <section id="carouselBasicExample" class="carousel slide carousel-fade" data-mdb-ride="carousel">
-        <div class="carousel-indicators">
-          <button type="button" data-mdb-target="#carouselBasicExample" data-mdb-slide-to="0" class="active"
-            aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-mdb-target="#carouselBasicExample" data-mdb-slide-to="1"
-            aria-label="Slide 2"></button>
-          <button type="button" data-mdb-target="#carouselBasicExample" data-mdb-slide-to="2"
-            aria-label="Slide 3"></button>
-        </div>
+      <MDBCarousel showControls>
+      <MDBCarouselItem
+        className='w-100 d-block'
+        itemId={1}
+        src='https://mdbootstrap.com/img/new/slides/041.jpg'
+        alt='...'
+      />
+      <MDBCarouselItem
+        className='w-100 d-block'
+        itemId={2}
+        src='https://mdbootstrap.com/img/new/slides/042.jpg'
+        alt='...'
+      />
+      <MDBCarouselItem
+        className='w-100 d-block'
+        itemId={3}
+        src='https://mdbootstrap.com/img/new/slides/043.jpg'
+        alt='...'
+      />
+    </MDBCarousel>
 
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="https://mdbcdn.b-cdn.net/img/Photos/Slides/img%20(15).webp" class="d-block w-100"
-              alt="Sunset Over the City" />
-            <div class="carousel-caption d-none d-md-block">
-              <h5>First slide label</h5>
-              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-            </div>
-          </div>
-
-          <div class="carousel-item">
-            <img src="https://mdbcdn.b-cdn.net/img/Photos/Slides/img%20(22).webp" class="d-block w-100"
-              alt="Canyon at Nigh" />
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Second slide label</h5>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>
-          </div>
-
-          <div class="carousel-item">
-            <img src="https://mdbcdn.b-cdn.net/img/Photos/Slides/img%20(23).webp" class="d-block w-100"
-              alt="Cliff Above a Stormy Sea" />
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Third slide label</h5>
-              <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-            </div>
-          </div>
-        </div>
-
-        <button class="carousel-control-prev" type="button" data-mdb-target="#carouselBasicExample"
-          data-mdb-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-mdb-target="#carouselBasicExample"
-          data-mdb-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </section>
+    
 
       <main id="contacto">
       </main>
