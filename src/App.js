@@ -1,4 +1,4 @@
-// import logo from './logo.svg';
+import logo from './images/logo-1-300x138.png';
 
 import './App.scss';
 
@@ -8,7 +8,8 @@ function App() {
       <header class="logoAndMenuItemsContainer">
         <div class="menu">
           <div class="logo">
-            <li class="nobullets"><a href="./"><img class="logo-img" src="./images/logo-1-300x138.png"
+            {/* <li class="nobullets"><a href="./"><img class="logo-img" src="./images/logo-1-300x138.png" */}
+            <li class="nobullets"><a href="./"><img class="logo-img" src={logo}
               alt="logo" /></a></li>
           </div>
           <div class="menuItems">
