@@ -16,13 +16,15 @@ import {
   MDBCollapse,
 } from 'mdb-react-ui-kit';
 
+import logo from '../../../src/images/logo-1-300x138.png';
+import './Navigation.scss';
 export default function Navigation() {
   const [showBasic, setShowBasic] = useState(false);
 
   return (
     <MDBNavbar expand='lg' light bgColor='light'>
       <MDBContainer fluid>
-        <MDBNavbarBrand href='#'>Brand</MDBNavbarBrand>
+        <MDBNavbarBrand href='#'><img src={logo} /></MDBNavbarBrand>
 
         <MDBNavbarToggler
           aria-controls='navbarSupportedContent'

@@ -1,0 +1,6 @@
+.container-fluid {
+  flex-wrap: unset;
+}
+.container-fluid .navbar-brand img {
+  width: 90px;
+}/*# sourceMappingURL=Navigation.css.map */
