@@ -1,8 +1,7 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
+import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import Home from './pages/Home/Home';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -11,7 +10,23 @@ root.render(
   </React.StrictMode>
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+function App() {
+// The reason to declare App this way is so that we can use any helper functions we'd need for business logic, in our case auth.
+  // React Router has a nifty useHistory hook we can use at this level to ensure we have security around our routes.
+  const history = useHistory();
+  return (
+    <div className="index-container">
+    {/* Added features */}
+
+    <Security {...config} onAuthRequired={authHandler}>
+      <Switch>
+        <Route path="/" component={Home} />
+        {/* any of the routes you need secured should be registered as SecureRoutes */}
+      
+        <Route path="/404" component={NotFoundPage} />
+        <Redirect to="/404" />
+      </Switch>
+    </Security>
+  </div>
+  )
+}
