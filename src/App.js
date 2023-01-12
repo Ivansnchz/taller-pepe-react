@@ -1,4 +1,3 @@
-import logo from './images/logo-1-300x138.png'
 import Navigation from './components/Navigation/Navigation'
 import Aside from './components/Aside/Aside'
 import {
@@ -15,44 +14,8 @@ function App() {
 
   return (
     <div id="pageContainer">
-     {/*  <header className="logoAndMenuItemsContainer">
-        <div className="menu">
-          <div className="logo">
-            <li className="nobullets">
-              <a href="./">
-                <img className="logo-img" src={logo} alt="logo" />
-              </a>
-            </li>
-          </div>
-          <div className="menuItems">
-            <ul>
-              <li>
-                <a href="../">
-                  <span className="orange">Inicio</span>
-                </a>
-              </li>
-              <li>
-                <a href="./servicios">
-                  <span>Servicios24</span>
-                </a>
-              </li>
-              <li>
-                <a href="./recomendamos">
-                  <span className="ini">Recomendamos</span>
-                </a>
-              </li>
-              <li>
-                <a href="./">
-                  <span>Contacto</span>
-                </a>
-              </li>
-            </ul>
-          </div>
-
-        </div>
-      </header> */}
+    
       <Navigation />
-
       <Aside />
 
       <MDBCarousel showControls>

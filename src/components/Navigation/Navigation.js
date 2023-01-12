@@ -8,11 +8,6 @@ import {
   MDBNavbarNav,
   MDBNavbarItem,
   MDBNavbarLink,
-  MDBBtn,
-  MDBDropdown,
-  MDBDropdownToggle,
-  MDBDropdownMenu,
-  MDBDropdownItem,
   MDBCollapse,
 } from 'mdb-react-ui-kit';
 
@@ -24,7 +19,7 @@ export default function Navigation() {
   return (
     <MDBNavbar expand='lg' light bgColor='light'>
       <MDBContainer fluid>
-        <MDBNavbarBrand href='#'><img src={logo} /></MDBNavbarBrand>
+        <MDBNavbarBrand href='#'><img src={logo} alt="logo" /></MDBNavbarBrand>
 
         <MDBNavbarToggler
           aria-controls='navbarSupportedContent'
@@ -51,35 +46,7 @@ export default function Navigation() {
                 Contacto
               </MDBNavbarLink>
             </MDBNavbarItem>
-             {/*<MDBNavbarItem>
-              <MDBNavbarLink href='#'>Link</MDBNavbarLink>
-            </MDBNavbarItem>
-
-            <MDBNavbarItem>
-              <MDBDropdown>
-                <MDBDropdownToggle tag='a' className='nav-link' role='button'>
-                  Dropdown
-                </MDBDropdownToggle>
-                <MDBDropdownMenu>
-                  <MDBDropdownItem link>Inicio</MDBDropdownItem>
-                  <MDBDropdownItem link>Servicios24</MDBDropdownItem>
-                  <MDBDropdownItem link>Recomendamos</MDBDropdownItem>
-                  <MDBDropdownItem link>Contacto</MDBDropdownItem>
-                </MDBDropdownMenu> 
-              </MDBDropdown>
-            </MDBNavbarItem>*/}
-
-            {/* <MDBNavbarItem>
-              <MDBNavbarLink disabled href='#' tabIndex={-1} aria-disabled='true'>
-                Disabled
-              </MDBNavbarLink>
-            </MDBNavbarItem> */}
           </MDBNavbarNav>
-
-         {/*  <form className='d-flex input-group w-auto'>
-            <input type='search' className='form-control' placeholder='Type query' aria-label='Search' />
-            <MDBBtn color='primary'>Search</MDBBtn>
-          </form> */}
         </MDBCollapse>
       </MDBContainer>
     </MDBNavbar>
