@@ -1,0 +1,11 @@
+
+.container-fluid {
+
+  flex-wrap: unset;
+  .navbar-brand {
+    
+    img {
+      width: calc(0.3 * 300px );
+    }
+  }
+}

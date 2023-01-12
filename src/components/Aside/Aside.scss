@@ -1,0 +1,21 @@
+    // introduction section
+    .intro-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      p {
+          padding: 3rem;
+      }
+
+      h2 {
+          display: flex;
+          align-items: center;
+          align-self: center;
+          flex-wrap: nowrap;
+          font-size: $pequena;
+          margin-top: 2rem;
+          margin-bottom: 1rem;
+      }
+
+  }

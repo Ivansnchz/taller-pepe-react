@@ -1,0 +1,263 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* color paleta
+background-color: #f05a1a;
+    color: #f8f8f8; */
+h1,
+h2,
+p,
+span,
+footer {
+  color: rgb(61, 59, 59);
+}
+
+div#pageContainer {
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+div#pageContainer header.logoAndMenuItemsContainer {
+  display: block;
+}
+div#pageContainer header.logoAndMenuItemsContainer div.menu div.logo {
+  float: left;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+div#pageContainer header.logoAndMenuItemsContainer div.menu div.logo li.nobullets {
+  list-style: none;
+}
+div#pageContainer header.logoAndMenuItemsContainer div.menu .menuItems {
+  display: none;
+}
+@media only screen and (min-width: 762px) {
+  div#pageContainer header.logoAndMenuItemsContainer div.menu .menuItems {
+    display: flex;
+    flex-direction: row;
+    justify-self: baseline;
+    float: right;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  div#pageContainer header.logoAndMenuItemsContainer div.menu .menuItems {
+    display: flex;
+    flex-direction: row;
+    justify-self: baseline;
+    float: right;
+  }
+}
+div#pageContainer header.logoAndMenuItemsContainer div.menu .menuItems ul {
+  display: flex;
+  flex-direction: row;
+  justify-items: flex-end;
+  padding-top: 2rem;
+}
+div#pageContainer header.logoAndMenuItemsContainer div.menu .menuItems ul li {
+  margin-right: 2rem;
+  list-style: none;
+  height: 100%;
+}
+div#pageContainer header.logoAndMenuItemsContainer div.menu .menuItems ul li a {
+  max-height: 88px;
+  text-decoration: none;
+  color: rgb(10, 7, 12);
+}
+div#pageContainer header.logoAndMenuItemsContainer div.menu .menuItems ul li a:hover {
+  text-decoration: none;
+  color: rgb(131, 71, 172);
+}
+div#pageContainer header.logoAndMenuItemsContainer div.menu .menuItems ul li:hover {
+  border-bottom: 2px solid purple;
+  margin-bottom: -2px;
+}
+div#pageContainer header.logoAndMenuItemsContainer div.menu #mobileMenu {
+  display: flex;
+}
+@media only screen and (min-width: 762px) {
+  div#pageContainer header.logoAndMenuItemsContainer div.menu #mobileMenu {
+    display: none;
+  }
+}
+div#pageContainer main#servicios {
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  justify-content: center;
+  margin: 0;
+}
+div#pageContainer main#servicios article {
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  justify-content: center;
+  padding: 3rem;
+}
+div#pageContainer main#servicios h1 {
+  display: flex;
+  align-self: center;
+  flex-wrap: nowrap;
+  font-size: 1.2rem;
+}
+div#pageContainer main#servicios h2 {
+  display: flex;
+  align-self: center;
+  flex-wrap: nowrap;
+  font-size: 1.2rem;
+}
+
+.logo-img {
+  height: 3rem;
+}
+
+.orangeText {
+  color: orangered;
+}
+
+.intro-section {
+  background-color: #e1e1e1;
+}
+
+.buttonHello {
+  width: 5rem;
+  height: 2rem;
+}
+
+footer {
+  text-align: center;
+}/*# sourceMappingURL=App.css.map */
