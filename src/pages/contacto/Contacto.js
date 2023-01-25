@@ -1,5 +1,5 @@
 
-import react from 'React';
+import React from 'React';
 
 
 function Servicios() {
