@@ -1,12 +1,21 @@
 
 import react from 'React';
 
+import {
+
+    MDBCarousel,
+    MDBCarouselItem,
+} from 'mdb-react-ui-kit'
+
+import Servicios from '../Servicios/Servicios';
+import Aside from '../../components/Aside/Aside'
+import Navigation from '../../components/Navigation/Navigation'
 
 function Home() {
 
     return (
 
-        <div id="pageContainer">
+        <div id="homeContainer">
 
             <Navigation />
             <Aside />
@@ -32,7 +41,7 @@ function Home() {
                 />
             </MDBCarousel>
 
-            <main id="contacto"></main>
+            <Servicios />
 
             <footer className="footer">Copyright 2020</footer>
         </div>
