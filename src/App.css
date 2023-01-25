@@ -144,7 +144,7 @@ footer {
   color: rgb(61, 59, 59);
 }
 
-div#pageContainer {
+div#homeContainer {
   display: flex;
   flex-direction: column;
   justify-self: center;
@@ -152,22 +152,22 @@ div#pageContainer {
   margin: 0;
   padding: 0;
 }
-div#pageContainer header.logoAndMenuItemsContainer {
+div#homeContainer header.logoAndMenuItemsContainer {
   display: block;
 }
-div#pageContainer header.logoAndMenuItemsContainer div.menu div.logo {
+div#homeContainer header.logoAndMenuItemsContainer div.menu div.logo {
   float: left;
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
-div#pageContainer header.logoAndMenuItemsContainer div.menu div.logo li.nobullets {
+div#homeContainer header.logoAndMenuItemsContainer div.menu div.logo li.nobullets {
   list-style: none;
 }
-div#pageContainer header.logoAndMenuItemsContainer div.menu .menuItems {
+div#homeContainer header.logoAndMenuItemsContainer div.menu .menuItems {
   display: none;
 }
 @media only screen and (min-width: 762px) {
-  div#pageContainer header.logoAndMenuItemsContainer div.menu .menuItems {
+  div#homeContainer header.logoAndMenuItemsContainer div.menu .menuItems {
     display: flex;
     flex-direction: row;
     justify-self: baseline;
@@ -175,66 +175,66 @@ div#pageContainer header.logoAndMenuItemsContainer div.menu .menuItems {
   }
 }
 @media only screen and (min-width: 1024px) {
-  div#pageContainer header.logoAndMenuItemsContainer div.menu .menuItems {
+  div#homeContainer header.logoAndMenuItemsContainer div.menu .menuItems {
     display: flex;
     flex-direction: row;
     justify-self: baseline;
     float: right;
   }
 }
-div#pageContainer header.logoAndMenuItemsContainer div.menu .menuItems ul {
+div#homeContainer header.logoAndMenuItemsContainer div.menu .menuItems ul {
   display: flex;
   flex-direction: row;
   justify-items: flex-end;
   padding-top: 2rem;
 }
-div#pageContainer header.logoAndMenuItemsContainer div.menu .menuItems ul li {
+div#homeContainer header.logoAndMenuItemsContainer div.menu .menuItems ul li {
   margin-right: 2rem;
   list-style: none;
   height: 100%;
 }
-div#pageContainer header.logoAndMenuItemsContainer div.menu .menuItems ul li a {
+div#homeContainer header.logoAndMenuItemsContainer div.menu .menuItems ul li a {
   max-height: 88px;
   text-decoration: none;
   color: rgb(10, 7, 12);
 }
-div#pageContainer header.logoAndMenuItemsContainer div.menu .menuItems ul li a:hover {
+div#homeContainer header.logoAndMenuItemsContainer div.menu .menuItems ul li a:hover {
   text-decoration: none;
   color: rgb(131, 71, 172);
 }
-div#pageContainer header.logoAndMenuItemsContainer div.menu .menuItems ul li:hover {
+div#homeContainer header.logoAndMenuItemsContainer div.menu .menuItems ul li:hover {
   border-bottom: 2px solid purple;
   margin-bottom: -2px;
 }
-div#pageContainer header.logoAndMenuItemsContainer div.menu #mobileMenu {
+div#homeContainer header.logoAndMenuItemsContainer div.menu #mobileMenu {
   display: flex;
 }
 @media only screen and (min-width: 762px) {
-  div#pageContainer header.logoAndMenuItemsContainer div.menu #mobileMenu {
+  div#homeContainer header.logoAndMenuItemsContainer div.menu #mobileMenu {
     display: none;
   }
 }
-div#pageContainer main#servicios {
+div#homeContainer main#servicios {
   display: flex;
   flex-direction: column;
   justify-self: center;
   justify-content: center;
   margin: 0;
 }
-div#pageContainer main#servicios article {
+div#homeContainer main#servicios article {
   display: flex;
   flex-direction: column;
   justify-self: center;
   justify-content: center;
   padding: 3rem;
 }
-div#pageContainer main#servicios h1 {
+div#homeContainer main#servicios h1 {
   display: flex;
   align-self: center;
   flex-wrap: nowrap;
   font-size: 1.2rem;
 }
-div#pageContainer main#servicios h2 {
+div#homeContainer main#servicios h2 {
   display: flex;
   align-self: center;
   flex-wrap: nowrap;
