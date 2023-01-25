@@ -1,8 +1,7 @@
 
 import react from 'React';
 
-
-function Servicios() {
+const Servicios = () => {
 
     return (
         <div id="serviciosContainer">

@@ -1,7 +1,14 @@
 import React, { useHistory } from 'react';
-import ReactDOM, { Switch, Route } from 'react-dom';
-import {Route as Router, Link, Switch, Route} from 'react-router-dom';
+
+import Servicios from './pages/Servicios/Servicios';
 import Home from './pages/Home/Home';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
+
 // import Contacto from './pages/Contacto/Contacto';
 // import Recomendamos from './pages/Recomendamos/Recomendamos';
 
@@ -24,6 +31,7 @@ function App() {
       {/*<Security {...config} onAuthRequired={authHandler}>*/}
       <Switch>
         <Route path="/" component={Home} />
+        <Route path="/servicios" component={Servicios} />
        {/*  <Route path="/recomendamos" component={Recomendamos} />
         <Route path="/contacto" component={Contacto} /> */}
         {/* any of the routes you need secured should be registered as SecureRoutes */}
