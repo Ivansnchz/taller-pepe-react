@@ -9,8 +9,10 @@ import {
   MDBNavbarItem,
   MDBNavbarLink,
   MDBCollapse,
+  
 } from 'mdb-react-ui-kit';
 
+import { Link } from "react-router-dom";
 import logo from '../../../src/images/logo-1-300x138.png';
 import './Navigation.scss';
 export default function Navigation() {
@@ -19,7 +21,7 @@ export default function Navigation() {
   return (
     <MDBNavbar expand='lg' light bgColor='light'>
       <MDBContainer fluid>
-        <MDBNavbarBrand href='#'><img src={logo} alt="logo" /></MDBNavbarBrand>
+        <MDBNavbarBrand href='/'><img src={logo} alt="logo" /></MDBNavbarBrand>
 
         <MDBNavbarToggler
           aria-controls='navbarSupportedContent'
@@ -33,18 +35,23 @@ export default function Navigation() {
         <MDBCollapse navbar show={showBasic}>
           <MDBNavbarNav className='mr-auto mb-2 mb-lg-0'>
             <MDBNavbarItem>
-              <MDBNavbarLink active aria-current='page' href='#'>
+            <Link to='/'>
+              <MDBNavbarLink active aria-current='page' href='/'>
                 Inicio
               </MDBNavbarLink>
-              <MDBNavbarLink active aria-current='page' href='#'>
-                Servicios24
-              </MDBNavbarLink>
-              <MDBNavbarLink active aria-current='page' href='#'>
+              </Link>
+              <Link to='/servicios'>
+              <MDBNavbarLink active aria-current='page' href='/servicios' >
+                Servicios
+              </MDBNavbarLink></Link>
+              <Link to='/recomendamos'>
+                <MDBNavbarLink active aria-current='page' href='/recomendamos'>
                 Recomendamos
-              </MDBNavbarLink>
-              <MDBNavbarLink active aria-current='page' href='#'>
+              </MDBNavbarLink></Link>
+              <Link to='/contacto'>
+              <MDBNavbarLink active aria-current='page' href='/contacto'>
                 Contacto
-              </MDBNavbarLink>
+              </MDBNavbarLink></Link>
             </MDBNavbarItem>
           </MDBNavbarNav>
         </MDBCollapse>
