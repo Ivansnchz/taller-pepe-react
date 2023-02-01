@@ -35,23 +35,18 @@ export default function Navigation() {
         <MDBCollapse navbar show={showBasic}>
           <MDBNavbarNav className='mr-auto mb-2 mb-lg-0'>
             <MDBNavbarItem>
-            <Link to='/'>
-              <MDBNavbarLink active aria-current='page' href='/'>
+              <MDBNavbarLink active aria-current='page' tag={Link} to='/'>
                 Inicio
               </MDBNavbarLink>
-              </Link>
-              <Link to='/servicios'>
-              <MDBNavbarLink active aria-current='page' href='/servicios' >
+              <MDBNavbarLink active aria-current='page' tag={Link} to='/servicios'>
                 Servicios
-              </MDBNavbarLink></Link>
-              <Link to='/recomendamos'>
-                <MDBNavbarLink active aria-current='page' href='/recomendamos'>
+              </MDBNavbarLink>
+                <MDBNavbarLink active aria-current='page' tag={Link} to='/recomendamos'>
                 Recomendamos
-              </MDBNavbarLink></Link>
-              <Link to='/contacto'>
-              <MDBNavbarLink active aria-current='page' href='/contacto'>
+              </MDBNavbarLink>
+              <MDBNavbarLink active aria-current='page'  tag={Link} to='/contacto'>
                 Contacto
-              </MDBNavbarLink></Link>
+              </MDBNavbarLink>
             </MDBNavbarItem>
           </MDBNavbarNav>
         </MDBCollapse>

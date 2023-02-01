@@ -1,8 +1,7 @@
 @import './styles/_reset';
 @import './styles/_base';
-@import './styles/_mixins';
 
-div#homeContainer {
+.landingPage {
     display: flex;
     flex-direction: column;
     justify-self: center;
@@ -104,44 +103,7 @@ div#homeContainer {
     
 
 
- 
-    // seccion que muestro los servicios del taller    
-    main#servicios {
-        @include centrado;
-        margin: 0;
-
-        article {
-            @include centrado;
-            padding: 3rem;
-        }
-
-        h1 {
-            display: flex;
-            align-self: center;
-            flex-wrap: nowrap;
-            font-size: 1.2rem;
-        }
-
-        h2 {
-            display: flex;
-            align-self: center;
-            flex-wrap: nowrap;
-            font-size: 1.2rem;
-        }
-
-
-    }
-
-
 }
-
-
-
-
-
-
-
-
 
 
 
@@ -164,7 +126,7 @@ div#homeContainer {
 
 }
 
-.intro-section {
+.recomendaciones {
     background-color: $blancoRoto;
 }
 

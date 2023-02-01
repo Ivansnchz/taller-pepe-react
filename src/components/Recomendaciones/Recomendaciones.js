@@ -1,8 +1,11 @@
 
-export default function Aside() {
+
+import './Recomendaciones.scss';
+
+export default function Recomendaciones() {
 
   return (
-    <aside className="intro-section">
+    <aside className="recomendacionesContainer">
       <h2>RECOMENDACIONES PARA COCHES</h2>
       <p>
         <span className="orangeText">Taller 24 horas Madrid,</span> se enfoca
