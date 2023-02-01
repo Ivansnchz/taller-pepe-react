@@ -21,7 +21,7 @@ export default function Navigation() {
   return (
     <MDBNavbar expand='lg' light bgColor='light'>
       <MDBContainer fluid>
-        <MDBNavbarBrand href='/'><img src={logo} alt="logo" /></MDBNavbarBrand>
+        <MDBNavbarBrand tag={Link} to='/'><img src={logo} alt="logo" /></MDBNavbarBrand>
 
         <MDBNavbarToggler
           aria-controls='navbarSupportedContent'
