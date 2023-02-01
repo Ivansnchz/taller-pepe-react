@@ -1,5 +1,9 @@
-    // introduction section
-    .intro-section {
+
+@import '../../styles/_mixins';
+@import '../../styles/base';
+
+
+.recomendacionesContainer {
       display: flex;
       flex-direction: column;
       align-items: center;

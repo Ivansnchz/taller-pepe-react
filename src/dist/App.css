@@ -141,10 +141,10 @@ h2,
 p,
 span,
 footer {
-  color: rgb(61, 59, 59);
+  color: #3d3b3b;
 }
 
-div#homeContainer {
+.landingPage {
   display: flex;
   flex-direction: column;
   justify-self: center;
@@ -152,22 +152,22 @@ div#homeContainer {
   margin: 0;
   padding: 0;
 }
-div#homeContainer header.logoAndMenuItemsContainer {
+.landingPage header.logoAndMenuItemsContainer {
   display: block;
 }
-div#homeContainer header.logoAndMenuItemsContainer div.menu div.logo {
+.landingPage header.logoAndMenuItemsContainer div.menu div.logo {
   float: left;
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
-div#homeContainer header.logoAndMenuItemsContainer div.menu div.logo li.nobullets {
+.landingPage header.logoAndMenuItemsContainer div.menu div.logo li.nobullets {
   list-style: none;
 }
-div#homeContainer header.logoAndMenuItemsContainer div.menu .menuItems {
+.landingPage header.logoAndMenuItemsContainer div.menu .menuItems {
   display: none;
 }
 @media only screen and (min-width: 762px) {
-  div#homeContainer header.logoAndMenuItemsContainer div.menu .menuItems {
+  .landingPage header.logoAndMenuItemsContainer div.menu .menuItems {
     display: flex;
     flex-direction: row;
     justify-self: baseline;
@@ -175,70 +175,44 @@ div#homeContainer header.logoAndMenuItemsContainer div.menu .menuItems {
   }
 }
 @media only screen and (min-width: 1024px) {
-  div#homeContainer header.logoAndMenuItemsContainer div.menu .menuItems {
+  .landingPage header.logoAndMenuItemsContainer div.menu .menuItems {
     display: flex;
     flex-direction: row;
     justify-self: baseline;
     float: right;
   }
 }
-div#homeContainer header.logoAndMenuItemsContainer div.menu .menuItems ul {
+.landingPage header.logoAndMenuItemsContainer div.menu .menuItems ul {
   display: flex;
   flex-direction: row;
   justify-items: flex-end;
   padding-top: 2rem;
 }
-div#homeContainer header.logoAndMenuItemsContainer div.menu .menuItems ul li {
+.landingPage header.logoAndMenuItemsContainer div.menu .menuItems ul li {
   margin-right: 2rem;
   list-style: none;
   height: 100%;
 }
-div#homeContainer header.logoAndMenuItemsContainer div.menu .menuItems ul li a {
+.landingPage header.logoAndMenuItemsContainer div.menu .menuItems ul li a {
   max-height: 88px;
   text-decoration: none;
-  color: rgb(10, 7, 12);
+  color: #0a070c;
 }
-div#homeContainer header.logoAndMenuItemsContainer div.menu .menuItems ul li a:hover {
+.landingPage header.logoAndMenuItemsContainer div.menu .menuItems ul li a:hover {
   text-decoration: none;
-  color: rgb(131, 71, 172);
+  color: #8347ac;
 }
-div#homeContainer header.logoAndMenuItemsContainer div.menu .menuItems ul li:hover {
+.landingPage header.logoAndMenuItemsContainer div.menu .menuItems ul li:hover {
   border-bottom: 2px solid purple;
   margin-bottom: -2px;
 }
-div#homeContainer header.logoAndMenuItemsContainer div.menu #mobileMenu {
+.landingPage header.logoAndMenuItemsContainer div.menu #mobileMenu {
   display: flex;
 }
 @media only screen and (min-width: 762px) {
-  div#homeContainer header.logoAndMenuItemsContainer div.menu #mobileMenu {
+  .landingPage header.logoAndMenuItemsContainer div.menu #mobileMenu {
     display: none;
   }
-}
-div#homeContainer main#servicios {
-  display: flex;
-  flex-direction: column;
-  justify-self: center;
-  justify-content: center;
-  margin: 0;
-}
-div#homeContainer main#servicios article {
-  display: flex;
-  flex-direction: column;
-  justify-self: center;
-  justify-content: center;
-  padding: 3rem;
-}
-div#homeContainer main#servicios h1 {
-  display: flex;
-  align-self: center;
-  flex-wrap: nowrap;
-  font-size: 1.2rem;
-}
-div#homeContainer main#servicios h2 {
-  display: flex;
-  align-self: center;
-  flex-wrap: nowrap;
-  font-size: 1.2rem;
 }
 
 .logo-img {
@@ -260,4 +234,4 @@ div#homeContainer main#servicios h2 {
 
 footer {
   text-align: center;
-}/*# sourceMappingURL=App.css.map */
+}

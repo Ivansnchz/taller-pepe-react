@@ -1,0 +1,28 @@
+/* color paleta
+background-color: #f05a1a;
+    color: #f8f8f8; */
+h1,
+h2,
+p,
+span,
+footer {
+  color: #3d3b3b;
+}
+
+.recomendacionesContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.recomendacionesContainer p {
+  padding: 3rem;
+}
+.recomendacionesContainer h2 {
+  display: flex;
+  align-items: center;
+  align-self: center;
+  flex-wrap: nowrap;
+  font-size: 1.2rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}

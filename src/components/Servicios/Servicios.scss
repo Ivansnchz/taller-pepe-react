@@ -1,0 +1,29 @@
+// seccion que muestro los servicios del taller    
+
+@import '../../styles/_mixins';
+
+.serviciosContainer {
+    @include centrado;
+    margin: 0;
+
+    article {
+        @include centrado;
+        padding: 3rem;
+    }
+
+    h1 {
+        display: flex;
+        align-self: center;
+        flex-wrap: nowrap;
+        font-size: 1.2rem;
+    }
+
+    h2 {
+        display: flex;
+        align-self: center;
+        flex-wrap: nowrap;
+        font-size: 1.2rem;
+    }
+
+
+}

@@ -10,13 +10,13 @@ import Home from "./pages/Home/Home";
 import Servicios from "./pages/Servicios/Servicios";
 import Recomendamos from "./pages/Recomendamos/Recomendamos";
 import Contacto from "./pages/Contacto/Contacto";
-import ErrorPage from './pages/ErrorPage/ErrorPage';
+import Error from './pages/Error/Error';
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App />,
-    errorElement: <ErrorPage />,
+    element: <Home />,
+    errorElement: <Error />,
   },
   {
     path: "/servicios",

@@ -1,17 +1,13 @@
+import HomeComponent from "../../components/Home/Home";
+import Page from "../../components/Page/Page";
 
-
-
-function Home() {
+export default function Home() {
 
     return (
 
         <div id="homeContainer">
-
+            <Page children={HomeComponent} />
         </div>
 
     );
-
 }
-
-
-export default Home;
